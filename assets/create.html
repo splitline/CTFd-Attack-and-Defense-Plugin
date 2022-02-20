@@ -1,0 +1,23 @@
+{% extends "admin/challenges/create.html" %}
+
+{% block header %}
+<div class="alert alert-secondary" role="alert">
+	AWD!!!
+</div>
+{% endblock %}
+
+
+{% block value %}
+<div class="form-group">
+	<label for="value">Defense Points<br>
+		<small class="form-text text-muted">
+			The number of points user get for successfully defensing this challenge.
+		</small>
+	</label>
+	<input type="number" class="form-control" name="defense_point" placeholder="Enter value" required>
+</div>
+{% endblock %}
+
+{% block type %}
+<input type="hidden" value="awd_challenge" name="type" id="chaltype">
+{% endblock %}

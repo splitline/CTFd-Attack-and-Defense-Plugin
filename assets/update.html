@@ -1,0 +1,24 @@
+{% extends "admin/challenges/update.html" %}
+
+{% block value %}
+<div class="form-group">
+	<label for="value">Token<br>
+		<small class="form-text text-muted">
+			<span class="text-danger">
+				Don't share your token with anyone.
+			</span>
+		</small>
+	</label>
+	<input type="text" class="form-control" name="attack_point" placeholder="Enter value" value="{{challenge.token}}" readonly>
+</div>
+
+
+<div class="form-group">
+	<label for="value">Defense Points<br>
+		<small class="form-text text-muted">
+			The number of points user get for successfully defensing this challenge.
+		</small>
+	</label>
+	<input type="number" class="form-control" name="defense_point" placeholder="Enter value" value="{{challenge.defense_point}}" required>
+</div>
+{% endblock %}
