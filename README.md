@@ -2,12 +2,15 @@
 
 ## Installation
 
+```sh
+git clone https://github.com/splitline/CTFd-Attack-and-Defense-Plugin.git /path/to/ctfd/plugins
+```
 
 ## API
 
 - Endpoint: `http://YOUR_CTFd_HOST/plugins/awd/api/update`
 
-```json
+```javascript
 {
     "id": <challenge-id>,
     "token": "<token>", // you'll see it after you create the challenge
