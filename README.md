@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-git clone https://github.com/splitline/CTFd-Attack-and-Defense-Plugin.git /path/to/ctfd/plugins
+git clone https://github.com/splitline/CTFd-Attack-and-Defense-Plugin.git path/to/CTFd/plugins/awd
 ```
 
 ## API
